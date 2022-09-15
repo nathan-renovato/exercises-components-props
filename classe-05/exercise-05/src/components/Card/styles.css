@@ -1,0 +1,44 @@
+.card {
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    padding: 68px 52px 70px;
+    position: relative;
+    width: 432px;
+}
+
+.close-card {
+    cursor: pointer;
+    font-size: 28px;
+    height: 30px;
+    opacity: 0.3;
+    position: absolute;
+    right: 30px;
+    text-align: center;
+    top: 30px;
+    width: 30px;
+}
+
+.card img {
+    margin-bottom: 29px;
+}
+
+.card p {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.card button {
+    all: unset;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font: normal 400 16px/21px 'Roboto', sans-serif;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+}
