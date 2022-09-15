@@ -9,14 +9,6 @@ const ownerContact = {
   owner: 'Daniel',
 }
 
-const infosForSale = {
-  name: car.name,
-  year: car.year,
-  color: car.color,
-  phoneContact: ownerContact.phoneContact,
-  owner: ownerContact.owner + ' Lopes',
-  price: 120000,
-  onlySale: true
-}
+const infosForSale = { ...car, ...ownerContact, owner: ownerContact.owner + ' Lopes', price: 120000, onlySale: true };
 
 console.log(infosForSale);
