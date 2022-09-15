@@ -1,0 +1,44 @@
+.user-card {
+    --primary-color-text: #131E30;
+    --secondary-color-text: #000;
+
+    align-items: center;
+    background-color: #FFF;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 410px;
+    justify-content: center;
+    width: 302px;
+}
+
+.profile-picture-card {
+    border: 10px solid #ECF3FC;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 122px;
+    margin-bottom: 30px;
+    width: 122px;
+}
+
+.user-card h1 {
+    color: var(--primary-color-text);
+    font: normal 700 24px/30px 'Mulish', sans-serif;
+    margin-bottom: 8px;
+}
+
+.user-card span,
+p {
+    font: normal 400 18px/23px 'Mulish', sans-serif;
+}
+
+.user-card span {
+    color: var(--primary-color-text);
+    margin-bottom: 69px;
+}
+
+.user-card p {
+    color: var(--secondary-color-text);
+}
