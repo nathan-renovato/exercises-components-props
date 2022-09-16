@@ -1,41 +1,41 @@
 import './App.css';
-import AnnaImage from './assets/anna-bia.svg';
-import CharlesImage from './assets/charles-santos.svg';
-import KelvinImage from './assets/kelvin-costa.svg';
-import MarioImage from './assets/mario-hisashi.svg';
+import AnnaBia from './assets/anna-bia.svg';
+import CharlesSantos from './assets/charles-santos.svg';
+import KelvinCosta from './assets/kelvin-costa.svg';
+import MarioHisashi from './assets/mario-hisashi.svg';
 import UserCard from './components/UserCard';
 
 
-const peoples = [
+const users = [
   {
     id: 1,
-    imageProfile: KelvinImage,
+    imageProfile: KelvinCosta,
     name: 'Kelvin Costa',
-    instagramAddress: '@costa',
+    userName: '@costa',
     numberFollowers: 140,
     numberFollowing: 207
   },
   {
     id: 2,
-    imageProfile: CharlesImage,
+    imageProfile: CharlesSantos,
     name: 'Charles Santos',
-    instagramAddress: '@charles.santos',
+    userName: '@charles.santos',
     numberFollowers: 302,
     numberFollowing: 419
   },
   {
     id: 3,
-    imageProfile: AnnaImage,
+    imageProfile: AnnaBia,
     name: 'Anna Bia',
-    instagramAddress: '@anab',
+    userName: '@anab',
     numberFollowers: 842,
     numberFollowing: 150
   },
   {
     id: 4,
-    imageProfile: MarioImage,
+    imageProfile: MarioHisashi,
     name: 'Mario Hisashi',
-    instagramAddress: '@hisashi',
+    userName: '@hisashi',
     numberFollowers: 28,
     numberFollowing: 17
   }
@@ -44,14 +44,14 @@ const peoples = [
 export default function App() {
   return (
     <div className="App">
-      {peoples.map((people) => (
+      {users.map((user) => (
         <UserCard
-          key={people.id}
-          imageProfile={people.imageProfile}
-          name={people.name}
-          instagramAddress={people.instagramAddress}
-          numberFollowers={people.numberFollowers}
-          numberFollowing={people.numberFollowing}
+          key={user.id}
+          imageProfile={user.imageProfile}
+          name={user.name}
+          userName={user.userName}
+          numberFollowers={user.numberFollowers}
+          numberFollowing={user.numberFollowing}
         />
       ))}
     </div>

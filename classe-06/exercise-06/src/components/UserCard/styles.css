@@ -42,3 +42,8 @@ p {
 .user-card p {
     color: var(--secondary-color-text);
 }
+
+.follow-card {
+    display: flex;
+    gap: 5px;
+}

@@ -3,7 +3,7 @@ import './styles.css';
 export default function UserCard({
     imageProfile,
     name,
-    instagramAddress,
+    userName,
     numberFollowers,
     numberFollowing
 
@@ -16,9 +16,15 @@ export default function UserCard({
             >
             </div>
             <h1>{name}</h1>
-            <span>{instagramAddress}</span>
-            <p>{numberFollowers + ' seguidores'}</p>
-            <p>{numberFollowing + ' seguindo'}</p>
+            <span>{userName}</span>
+            <div className='follow-card'>
+                <p>{numberFollowers}</p>
+                <p> seguidores</p>
+            </div>
+            <div className='follow-card'>
+                <p>{numberFollowing}</p>
+                <p> seguindo</p>
+            </div>
         </div>
     )
 }
