@@ -13,4 +13,4 @@ function sayTripPath({ name, origin, destination, date, hour }) {
   `);
 };
 
-sayTripPath({ ...tripData });
+sayTripPath(tripData);
