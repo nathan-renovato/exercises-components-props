@@ -10,9 +10,11 @@ export default function Card({
 }) {
     return (
         <div className='card'>
-            <div className='close-card'>
-                <img src={CloseCardImage} />
-            </div>
+            <img
+                src={CloseCardImage}
+                alt='botão que fecha o card'
+                className='close-card'
+            />
             <img src={src} alt={alt} />
             <p>{p}</p>
             <button
